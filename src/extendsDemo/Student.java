@@ -1,0 +1,68 @@
+package extendsDemo;
+
+public class Student {
+    private String name;
+    private char sex;
+    private int age;
+    private String school;
+
+    public Student()
+    {
+
+    }
+
+    public Student(String name, char sex, int age) {
+        // this使用兄第构造器
+        // 注意：super()和this()不能同时使用,且必须放在构造器的第一行
+        this("清华大学", name, sex, age);
+    }
+
+    public Student(String school, String name, char sex, int age) {
+        this.school = school;
+        this.name = name;
+        this.sex = sex;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public char getSex() {
+        return sex;
+    }
+
+    public void setSex(char sex) {
+        this.sex = sex;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getSchool() {
+        return school;
+    }
+
+    public void setSchool(String school) {
+        this.school = school;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", sex=" + sex +
+                ", age=" + age +
+                ", school='" + school + '\'' +
+                '}';
+    }
+}
