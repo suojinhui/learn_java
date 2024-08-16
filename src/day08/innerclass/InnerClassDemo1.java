@@ -1,4 +1,4 @@
-package com.itheima.innerclass;
+package day08.innerclass;
 
 public class InnerClassDemo1 {
     public static void main(String[] args) {

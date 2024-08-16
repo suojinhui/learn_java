@@ -1,4 +1,4 @@
-package com.itheima.innerclass;
+package day08.innerclass;
 // 外部类
 public class Outer {
     public static String schoolName = "黑马程序员";

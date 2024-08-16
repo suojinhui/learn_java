@@ -53,7 +53,7 @@ public class GenericDemo6 {
         System.out.println(i1 + 2);
 
         String str2 = "98.8";
-//        double d = Double.parseDouble(str2);
+        // double d = Double.parseDouble(str2);
         double d = Double.valueOf(str2);
         System.out.println(d + 2);
     }

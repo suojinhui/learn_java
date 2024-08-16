@@ -96,6 +96,7 @@ public class CollectionTraversalTest6 {
         while(it.hasNext()){
             String name = it.next();
             if(name.contains("枸杞")){
+                // list4.remove(name); 会出现并发异常
                 it.remove();   // 可以解决 解决方案3：使用迭代器自己的方法来删除当前数据
             }
         }

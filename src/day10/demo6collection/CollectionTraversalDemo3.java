@@ -12,12 +12,12 @@ public class CollectionTraversalDemo3 {
         names.add("玄冥二老");
         names.add("宋青书");
 //        names.add("殷素素");
-        System.out.println(names); // [张无忌, 玄冥二老, 宋青书]
+        System.out.println(names); // [张无忌, 玄冥二老, 宋青书] 指针指在第一个位置
         //                                                      it
 
         // 1、得到这个集合的迭代器对象
         Iterator<String> it = names.iterator();
-//        System.out.println(it.next());
+//        System.out.println(it.next()); 取当前元素，并移到下一位
 //        System.out.println(it.next());
 //        System.out.println(it.next());
 //        System.out.println(it.next());

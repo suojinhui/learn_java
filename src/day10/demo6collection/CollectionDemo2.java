@@ -37,7 +37,8 @@ public class CollectionDemo2 {
         Object[] arr = list.toArray();
         System.out.println(Arrays.toString(arr));
 
-        // 把集合转换成字符串数组(拓展)
-        // String[] arr2 = list.toArray(String[]::new);
+        // 把集合转换成字符串数组
+        String[] arr2 = list.toArray(new String[0]);
+        System.out.println(Arrays.toString(arr2));
     }
 }
